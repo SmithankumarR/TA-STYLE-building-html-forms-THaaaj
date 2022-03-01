@@ -48,6 +48,9 @@ body{
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 *,*::before,*::after{
     box-sizing: border-box;
 }
@@ -56,7 +59,7 @@ body{
     width: 100%;
     margin: 0 auto;
     padding: 32px 0;
-    background-color: #F97877;
+    /* background-color: #F97877; */
 
 }
 .flex{
@@ -77,15 +80,14 @@ body{
 .content{
     margin: 30px;
 }
-header{
-    background-image: url(../media/bg-intro-desktop.png);
-}
-header h1{
+main{
+    background-image: url(../media/bg-intro-desktop.png) , linear-gradient( #F97877,  #F97877);}
+main h1{
     font-size: 50px;
     color: #fff;
     font-weight: 700;
 }
-header p{
+main a{
     font-size: 20px;
     color: #fff;
     margin-top: 24px;
@@ -96,16 +98,17 @@ header p{
     margin: 12px 0;
     border-radius: 6px;
     padding: 10px 12px;
+    text-align: center;
 }
-.label p {
+.content p {
     color:aliceblue;
     font-size: 20px;
     font-weight: 400;
 
 }
 .label span{
-    display: inline;
     color: rgb(204, 202, 202);
+    font-size: 14px;
     margin-left: 12px;
 }
 fieldset{
@@ -113,6 +116,15 @@ fieldset{
     padding: 42px;
     background-color: #fff;
     border-radius: 6px;
+}
+fieldset p{
+    color: gray;
+    margin-top: 16px;
+    text-align: center;
+}
+fieldset a{
+    color: #F97877;
+    font-size: 16px;
 }
 .form-control{
     background-color: #fff;
